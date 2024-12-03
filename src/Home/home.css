@@ -1,0 +1,129 @@
+section.home-container {
+  padding: 0 2rem 0 2rem;
+  animation: fadein 0.5s ease-in;
+}
+
+.home-title,
+.result-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.color-wrapper {
+  margin: 4rem 0 3rem 0;
+  gap: 1.5rem;
+}
+
+.color {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 90%;
+}
+
+input[type="text"] {
+  border: 0;
+  font-family: "Poppins", serif;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  outline: none;
+  width: calc(100vw - 4rem);
+  background: transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  max-width: 45rem;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid var(--dark-blue);
+}
+
+input::placeholder {
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.error {
+  border-bottom: 2px solid var(--dark-red) !important;
+}
+
+.active {
+  border: 2px solid var(--dark-blue);
+}
+
+.active.dark-blue {
+  border: 2px solid var(--light-blue);
+}
+.active.light-blue {
+  border: 2px solid var(--dark-blue);
+}
+.active.dark-pink {
+  border: 2px solid var(--light-pink);
+}
+
+.active.light-pink {
+  border: 2px solid var(--dark-pink);
+}
+
+form {
+  position: relative;
+  flex: 1rem;
+}
+.input-wrapper {
+  margin-bottom: 8rem;
+}
+.socials-wrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+}
+
+.socials-wrapper a {
+  cursor: pointer;
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.socials-wrapper svg {
+  cursor: pointer;
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.submit-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+  background: none;
+  border: none;
+}
+
+.submit-btn svg {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-title,
+  .result-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-title,
+  .result-title {
+    font-size: 3rem;
+  }
+
+  input[type="text"] {
+    font-size: 3.5rem;
+  }
+}
