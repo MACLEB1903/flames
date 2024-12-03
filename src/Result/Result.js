@@ -14,7 +14,6 @@ export default function Result({ personsInfo }) {
   useEffect(() => {
     try {
       const data = solveFlames(personsInfo);
-      console.log("Data received:", data);
       setResultData(data);
     } catch (e) {
       console.error("Error in solving flames", e);

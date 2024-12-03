@@ -1,7 +1,7 @@
 .result-sec {
   padding: 0.5rem 2rem 0 2rem;
   height: calc(100vh - 7.5rem);
-  z-index: 99;
+  z-index: 98;
   position: relative;
   background: white;
 }
@@ -108,17 +108,16 @@
   background-color: white;
   position: absolute;
   top: 0rem;
-  z-index: 1;
-  z-index: 97;
-  height: auto !important;
-  min-height: 70rem;
+  z-index: 2;
   animation: none;
+  min-height: 70rem;
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .result-sec {
     height: auto;
+    min-height: calc(100svh - 7.5rem);
   }
 
   .result-sec {

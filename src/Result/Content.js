@@ -39,7 +39,7 @@ export default function Content({ data, personsInfo }) {
             sectionRef.current.style.height = originalHeight;
             sectionRef.current.style.display = "none";
           });
-      }, 500);
+      }, 700);
     }
   };
 

@@ -5,7 +5,6 @@ import Logo from "../Logo/Logo";
 import "./landing-page.css";
 
 export default function LandingPage() {
-  console.log("landing apge");
   const navigate = useNavigate();
   document.title = "flames by MARCEL";
   return (
