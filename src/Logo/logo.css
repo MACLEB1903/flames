@@ -1,0 +1,17 @@
+.logo-wrapper {
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+#game-name {
+  font-family: "Kumbh Sans", serif !important;
+  margin-bottom: -0.7rem;
+}
+
+.fla {
+  color: var(--dark-blue);
+}
+
+.mes {
+  color: var(--dark-pink);
+}
