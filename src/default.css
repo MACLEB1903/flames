@@ -60,7 +60,7 @@ button {
 section {
   margin-top: 7.5rem;
   animation: fadein 0.5s ease-in;
-  height: calc(100svh - 7.5rem) !important;
+  height: calc(100vh - 7.5rem);
 }
 
 img,
@@ -88,6 +88,12 @@ button:active {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    height: calc(100svh - 7.5rem);
   }
 }
 

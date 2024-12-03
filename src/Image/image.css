@@ -48,22 +48,22 @@
   font-size: 1.4rem;
 }
 
-.result-title h1 {
+.downloadable-container.result-title h1 {
   font-size: 4rem !important;
 }
 
-.person-result-wrapper {
+.downloadable-container .person-result-wrapper {
   margin-top: 5rem !important;
 }
 
-.names-container {
-  margin-top: 2rem !important;
+.downloadable-container .names-container {
+  margin-top: 1.5rem !important;
 }
 
-.text-svg-wrapper {
+.downloadable-container .text-svg-wrapper {
   margin-bottom: 2rem !important;
 }
 
-.person-result-wrapper {
+.downloadable-container .person-result-wrapper {
   gap: 3.5rem !important;
 }

@@ -2,6 +2,7 @@
   padding-top: 30vh;
   align-items: center;
   animation: fadein 0.7s ease-in;
+  min-height: 40rem;
 }
 
 .landing-page-sec .game-name-wrapper {

@@ -1,7 +1,6 @@
 .result-sec {
   padding: 0.5rem 2rem 0 2rem;
-  min-height: 65rem;
-  height: calc(100vh - 5.5rem);
+  height: calc(100vh - 7.5rem);
   z-index: 99;
   position: relative;
   background: white;
@@ -119,6 +118,10 @@
 
 @media only screen and (max-width: 768px) {
   .result-sec {
+    height: auto;
+  }
+
+  .result-sec {
     margin-top: 6.5rem;
   }
 
@@ -141,11 +144,11 @@
     display: flex;
     flex: none;
   }
+
+  section {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  result-image {
-    position: relative;
-    height: 7.5rem;
-  }
 }
