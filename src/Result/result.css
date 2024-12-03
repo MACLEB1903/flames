@@ -110,8 +110,8 @@
   top: 0rem;
   z-index: 2;
   animation: none;
-  min-height: 70rem;
   height: auto;
+  min-height: 70rem;
   display: none;
 }
 
