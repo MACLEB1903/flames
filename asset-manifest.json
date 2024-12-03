@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/flames/static/css/main.147c08cb.css",
+    "main.js": "/flames/static/js/main.488c9d24.js",
+    "index.html": "/flames/index.html",
+    "main.147c08cb.css.map": "/flames/static/css/main.147c08cb.css.map",
+    "main.488c9d24.js.map": "/flames/static/js/main.488c9d24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.147c08cb.css",
+    "static/js/main.488c9d24.js"
+  ]
+}
