@@ -9,6 +9,7 @@ import "./home.css";
 
 export default function Home({ personsInfo, setPersonsInfo }) {
   window.scrollTo(0, 0);
+  console.log("Home Page");
   const [displayFrame, setDisplayFrame] = useState(1);
   const navigate = useNavigate();
 

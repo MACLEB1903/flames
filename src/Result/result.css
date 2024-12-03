@@ -1,0 +1,151 @@
+.result-sec {
+  padding: 0.5rem 2rem 0 2rem;
+  min-height: 65rem;
+  height: calc(100vh - 5.5rem);
+  z-index: 99;
+  position: relative;
+  background: white;
+}
+
+.result-title-wrapper {
+  align-items: center;
+  position: relative;
+}
+.result-svg-wrapper {
+  position: relative;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-top: 2rem;
+}
+
+.result-svg-wrapper svg:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.result-title {
+  position: absolute;
+  bottom: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  left: 8.5rem;
+}
+
+.sub-message {
+  margin: 2rem 0 1rem 0;
+}
+.names-container {
+  margin-top: 2rem;
+}
+
+.full-name {
+  flex-wrap: wrap;
+}
+
+.name {
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+
+.letter {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+.person-result-wrapper {
+  flex: 1;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.person-result {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.text-svg-wrapper {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.person-result svg {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 1rem;
+}
+
+.person-result:nth-of-type(3) svg {
+  height: 5rem;
+  width: 5rem;
+}
+.person-result p {
+  font-size: 1.6rem;
+}
+
+.result-sec .socials-wrapper {
+  margin-top: 6rem;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.download-btn {
+  position: absolute;
+  right: 0rem;
+  border: 0;
+  background: transparent;
+}
+.download-btn svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.image-section {
+  width: 75rem;
+  background-color: white;
+  position: absolute;
+  top: 0rem;
+  z-index: 1;
+  z-index: 97;
+  height: auto !important;
+  min-height: 70rem;
+  animation: none;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .result-sec {
+    margin-top: 6.5rem;
+  }
+
+  .person-result-wrapper {
+    flex-direction: column !important;
+    gap: 3.5rem;
+    margin-top: 4.5rem;
+  }
+
+  .text-svg-wrapper {
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .names-container {
+    margin-top: 0rem;
+  }
+
+  .person-result {
+    display: flex;
+    flex: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  result-image {
+    position: relative;
+    height: 7.5rem;
+  }
+}
