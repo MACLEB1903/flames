@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { toPng } from "html-to-image";
 
 import Header from "../Header/Header";
 import HeartSVG from "../Assets/HeartSVG";
@@ -9,14 +10,38 @@ import Linkedin from "../Assets/LinkedinSVG";
 import DownloadSVG from "../Assets/DownloadSVG";
 
 import Person from "./Person";
+import Image from "../Image/Image";
 
 export default function Content({ data, personsInfo }) {
-  console.log(data, personsInfo);
   const { result, mainMessage, p1Name, p2Name, similar, p1Message, p2Message } =
     data;
   const svgFillColors = [personsInfo[1]?.color, personsInfo[2]?.color];
 
   const sectionRef = useRef(null);
+
+  const handleDownload = () => {
+    if (sectionRef.current) {
+      sectionRef.current.style.display = "block";
+      setTimeout(() => {
+        const originalHeight = sectionRef.current.style.height;
+        sectionRef.current.style.height =
+          sectionRef.current.offsetHeight * 1 + "px";
+
+        toPng(sectionRef.current)
+          .then((dataUrl) => {
+            const link = document.createElement("a");
+            link.href = dataUrl;
+            link.download = "flames.png";
+            link.click();
+          })
+          .catch(console.error)
+          .finally(() => {
+            sectionRef.current.style.height = originalHeight;
+            sectionRef.current.style.display = "none";
+          });
+      }, 500);
+    }
+  };
 
   return (
     <>
@@ -64,13 +89,15 @@ export default function Content({ data, personsInfo }) {
           >
             <Linkedin />
           </a>
-          <button className="download-btn" /*onClick={handleDownload}*/>
+          <button className="download-btn" onClick={handleDownload}>
             <DownloadSVG />
           </button>
         </div>
       </section>
 
-      <section ref={sectionRef} className="image-section"></section>
+      <section ref={sectionRef} className="image-section">
+        <Image personsInfo={personsInfo} />
+      </section>
     </>
   );
 }

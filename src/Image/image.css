@@ -1,0 +1,69 @@
+.downloadable-container {
+  width: 75rem;
+  padding: 3rem;
+  animation: none;
+  position: relative;
+  z-index: 1;
+}
+
+#root {
+  overflow: hidden !important;
+}
+
+.downloadable-container .result-title {
+  font-size: 4rem !important;
+}
+
+.credits {
+  align-items: center;
+  position: relative;
+  margin: 3rem 0;
+  height: auto;
+}
+
+.credits-wrapper {
+  position: absolute;
+  align-items: center;
+  right: 0;
+}
+.credits svg {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.credits svg:nth-of-type(1) {
+  z-index: 50;
+}
+
+.credits svg:nth-of-type(2) {
+  z-index: 99;
+}
+
+.credits h2 {
+  font-size: 2rem;
+}
+
+.credits p {
+  font-size: 1.4rem;
+}
+
+.result-title h1 {
+  font-size: 4rem !important;
+}
+
+.person-result-wrapper {
+  margin-top: 5rem !important;
+}
+
+.names-container {
+  margin-top: 2rem !important;
+}
+
+.text-svg-wrapper {
+  margin-bottom: 2rem !important;
+}
+
+.person-result-wrapper {
+  gap: 3.5rem !important;
+}
