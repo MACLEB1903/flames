@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark-blue: #2f4156;
+  --light-blue: #8aaee0;
+  --dark-pink: #eb7096;
+  --light-pink: #ebbac2;
+  --dark-red: #e85234;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--dark-blue);
+}
+html {
+  font-size: 62.5%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  font-family: "Poppins", serif;
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+  background: white;
+  overflow-x: hidden !important;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden !important;
+  background: white;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 1.4rem;
+}
+
+section {
+  margin-top: 7.5rem;
+  animation: fadein 0.5s ease-in;
+  height: calc(100svh - 7.5rem) !important;
+}
+
+img,
+svg,
+button {
+  outline: none !important;
+}
+
+img:focus,
+svg:focus,
+button:focus {
+  outline: none !important;
+}
+
+img:active,
+svg:active,
+button:active {
+  outline: none !important;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: var(--light-pink);
+    background: white;
+  }
+
+  header #game-name {
+    display: none;
+  }
+
+  header p {
+    margin-bottom: 0rem;
+  }
+}
