@@ -4,5 +4,4 @@ Live at: https://marcelxeballar.github.io/flames/
 
 Bugs to be fixed:
 
-1. Favicon not displaying.
-2. Download credits not showing on longer frames.
+1. Download credits not showing on longer frames.
