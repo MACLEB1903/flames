@@ -73,7 +73,7 @@ export default function Form({
         ))}
       </div>
 
-      <div className="socials-wrapper flex-row">
+      <div className="socials-wrapper flex-row">{/*
         <Share />
 
         <a
@@ -90,7 +90,7 @@ export default function Form({
         >
           {" "}
           <Linkedin />
-        </a>
+        </a>*/}
         <button
           type="submit"
           className="submit-btn"
