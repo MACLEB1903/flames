@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import React from "react";
 
+/* 
 import Share from "../Assets/ShareSVG";
 import Linkedin from "../Assets/LinkedinSVG";
 import Github from "../Assets/GithubSVG";
+*/
 
 export default function Form({
   colorPref,
@@ -73,7 +75,8 @@ export default function Form({
         ))}
       </div>
 
-      <div className="socials-wrapper flex-row">{/*
+      <div className="socials-wrapper flex-row">
+        {/*
         <Share />
 
         <a
