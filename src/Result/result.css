@@ -92,11 +92,14 @@
   position: relative;
 }
 
+.download-btn,
+.link-copy-btn {
+  background: transparent;
+  border: 0;
+}
 .download-btn {
   position: absolute;
   right: 0rem;
-  border: 0;
-  background: transparent;
 }
 .download-btn svg {
   height: 3rem;

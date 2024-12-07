@@ -19,6 +19,11 @@ export default function Content({ data, personsInfo }) {
 
   const sectionRef = useRef(null);
 
+  function copyLink() {
+    alert("Link copied.");
+    navigator.clipboard.writeText("https://marcelxeballar.github.io/flames/");
+  }
+
   const handleDownload = () => {
     if (sectionRef.current) {
       sectionRef.current.style.display = "block";
@@ -74,7 +79,10 @@ export default function Content({ data, personsInfo }) {
           />
         </div>
         <div className="socials-wrapper flex-row">
-          <Share />
+          <button className="link-copy-btn" onClick={() => copyLink()}>
+            <Share />
+          </button>
+
           <a
             href="https://github.com/marcelxeballar"
             target="_blank"
