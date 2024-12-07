@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/flames/static/css/main.e7dae881.css",
-    "main.js": "/flames/static/js/main.a55d3f45.js",
+    "main.css": "/flames/static/css/main.38acb357.css",
+    "main.js": "/flames/static/js/main.cf0f5f56.js",
     "index.html": "/flames/index.html",
-    "main.e7dae881.css.map": "/flames/static/css/main.e7dae881.css.map",
-    "main.a55d3f45.js.map": "/flames/static/js/main.a55d3f45.js.map"
+    "main.38acb357.css.map": "/flames/static/css/main.38acb357.css.map",
+    "main.cf0f5f56.js.map": "/flames/static/js/main.cf0f5f56.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7dae881.css",
-    "static/js/main.a55d3f45.js"
+    "static/css/main.38acb357.css",
+    "static/js/main.cf0f5f56.js"
   ]
 }
