@@ -84,7 +84,7 @@ export default function Content({ data, personsInfo }) {
           </button>
 
           <a
-            href="https://github.com/marcelxeballar"
+            href="https://github.com/macleb1903"
             target="_blank"
             rel="noreferrer"
           >
