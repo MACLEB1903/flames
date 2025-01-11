@@ -21,7 +21,7 @@ export default function Content({ data, personsInfo }) {
 
   function copyLink() {
     alert("Link copied.");
-    navigator.clipboard.writeText("https://marcelxeballar.github.io/flames/");
+    navigator.clipboard.writeText("https://macleb1903.github.io/flames/");
   }
 
   const handleDownload = () => {
